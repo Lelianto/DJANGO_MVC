@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 
 # Create your models here.
 
@@ -24,6 +25,7 @@ class Blog(models.Model):
     img_blog_url = models.CharField(max_length=200, default=None)
     title = models.CharField(max_length=500, default=None)
     text_content = models.TextField(default=None)
+    date_post = models.DateTimeField(default=datetime.now())
 
     def __str__(self):
         return self.title
