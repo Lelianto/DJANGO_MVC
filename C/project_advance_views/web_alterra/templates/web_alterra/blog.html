@@ -1,0 +1,31 @@
+{% load static %}
+    {% include 'web_alterra/header.html' %}     
+        <div class="tombol">
+            <p class= "new_article">
+                <a href="content_blog" >Submit New Article</a>
+            </p>
+        </div>
+        <div class="container left-right-container">
+            <div class="row">
+                <div class="col-md-12 body-blog-content">
+
+                {% for blog in blogs %}
+                    <div class="body-blog-content-row">
+                        <img src="{{blog.img_blog_url}}" alt="" class="blog-content-img">
+                        <p>05 September 2019</p>
+                        <div class="article-title">{{blog.title}}</div>
+                        <div>
+                        <article>
+                            {{blog.text_content}}
+                        </article>
+                        </div>
+                        <div><a href="">Baca Selengkapnya</a></div>
+                    </div>
+                {% endfor %}
+                </div>    
+            </div>    
+        </div>                  
+    </section>
+    {% include 'web_alterra/footer.html' %}
+</body>
+</html>

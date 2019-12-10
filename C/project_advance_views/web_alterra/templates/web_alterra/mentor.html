@@ -1,0 +1,37 @@
+{% load static %}
+    {% include 'web_alterra/header.html' %}     
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mentee">
+                    <h3>
+                        Our Mentor
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        {% for mentor in mentors %}
+        <div class="container">
+            <div class="row row_dist">
+                <div class="col-md-3 img-men-1">
+                    <a href="">
+                        <img src="{% static 'img/mentor/' %}{{mentor.img_mentor_url}}" />
+                    </a>
+                </div>
+                <div class="col-md-9 txt-men-1">
+                    <h5>
+                        {{mentor.nama}}
+                    </h5>
+                    <div class="jabatan">
+                        {{mentor.jabatan}} ({{mentor.experience}} years experience)
+                    </div>
+                    <h6>
+                        {{mentor.quote}}
+                    </h6>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% include 'web_alterra/footer.html' %}
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Untuk judul dan link ke file css dan data gambar -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equip="X-UA-Compatible" content="ie=edge">
+        <title>Alterra Academy</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        {% include 'web_alterra/header.html' %}
+        <div class="page1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <img class="foto-author" src="{% static 'img/author/author.jpg' %}" alt="">
+                        <h4>Lelianto Eko Pradana</h4>
+                        <p><span>Please Write your summary</span>,
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                                Lorem ipsum Dolor Sit Amet.
+                        </p>
+                        <table>
+                                <tr>
+                                    <td>Address</td>
+                                    <td class="tab">: Jalan Flamboyan, Tidar, Malang</td>
+                                </tr>
+                                <tr>
+                                    <td>Telephone </td>
+                                    <td class="tab">: 081524235787</td>
+                                </tr>
+                                <tr>
+                                    <td>Education</td>
+                                    <td class="tab">: Sarjana</td>
+                                </tr>
+                                <tr>
+                                    <td>Profession</td>
+                                    <td class="tab">: Full-Stack Engineer</td>
+                                </tr>
+                                <tr>
+                                    <td>Nationality</td>
+                                    <td class="tab">: Indonesian</td>
+                                </tr>
+                                <tr>
+                                    <td>Company</td>
+                                    <td class="tab">: Alterra</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td class="tab">: lian@alterra.id</td>
+                                </tr>
+                                <tr>
+                                    <td>Company Address</td>
+                                    <td class="tab">: Sepulsa Lodge Malang</td>
+                                </tr>
+                        </table>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5588.0098159187555!2d112.61123450373901!3d-7.965881862349451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882865ded0697%3A0xa77fa961a7c4e4b7!2sSepulsa%20Lodge%20Malang!5e0!3m2!1sen!2sid!4v1575900592186!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+        {% include 'web_alterra/footer.html' %}
+    </body>
+</html>
